@@ -21,22 +21,26 @@ body {
 /* Header */
 
 .header {
-  padding: 10px 0 13px;
   width: 100%;
 
   background-color: #ffffff;
 
   font-size: 16px;
 
+  position: fixed;
+  top: 0;
+}
+
+.header .wrapper {
+  margin: 10px 0 13px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-
-  position: fixed;
-  top: 0;
 }
+
 .logo {
   width: 155px;
 }
@@ -65,7 +69,14 @@ body {
 }
 
 .title {
-  margin: 1500px;
+  margin: 4000px;
   font-size: 30px;
   text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .header .wrapper {
+    margin: 20px 30px;
+    flex-direction: row;
+  }
 }
