@@ -1,0 +1,71 @@
+:root {
+  --colorFont-menu: #4a4a4a;
+  --background-main: #3cdbc0;
+  --colorFont-title: #ffffff;
+  --font-text: "Rubik", sans-serif;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+
+body {
+  font-family: var(--font-text);
+}
+
+/* Header */
+
+.header {
+  padding: 10px 0 13px;
+  width: 100%;
+
+  background-color: #ffffff;
+
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  position: fixed;
+  top: 0;
+}
+.logo {
+  width: 155px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.link {
+  color: var(--colorFont-menu);
+  text-decoration: none;
+}
+
+/* Main */
+
+.main {
+  height: 100vh;
+
+  background-color: var(--background-main);
+  color: var(--colorFont-title);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 1500px;
+  font-size: 30px;
+  text-align: center;
+}
